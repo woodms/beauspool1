@@ -1,0 +1,17 @@
+// Variables
+$website-width: 1280px;
+$primary-color: #189ad3;
+$light-color: #71c7ec;
+$medium-color: #1ebbd7;
+$dark-color: #005073;
+$bg-image: url("../img/showcase-pool.jpg");
+$mission-image: url("../img/mission-pool.jpg");
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
