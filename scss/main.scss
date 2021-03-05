@@ -14,6 +14,15 @@ body {
   font-family: "Oswald", sans-serif;
   line-height: 1.2;
   background: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.scroll-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -30,25 +39,32 @@ h1 {
 }
 
 // Header
-.main-hdr {
-  display: flex;
-  justify-content: space-between;
-  color: $dark-color;
-  padding: 1rem;
-}
+header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
 
-.logo {
-  font-size: 2rem;
-  font-weight: 700;
-}
+  .main-hdr {
+    display: flex;
+    justify-content: space-between;
+    color: $dark-color;
+    padding: 1rem;
+    z-index: 2;
 
-.menu-right {
-  display: flex;
-  align-items: center;
-}
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+    }
 
-.call-us {
-  margin-right: 1rem;
+    .menu-right {
+      display: flex;
+      align-items: center;
+
+      .call-us {
+        margin-right: 1rem;
+      }
+    }
+  }
 }
 
 // Showcase
@@ -160,6 +176,10 @@ h1 {
       display: block;
       margin: 50px auto;
       width: 250px;
+
+      :hover {
+        background-color: $primary-color;
+      }
     }
   }
 }
@@ -272,7 +292,7 @@ h1 {
 
 #home-f {
   background: $contact-image no-repeat center center / cover;
-  height: 700px;
+  height: 600px;
 
   .contact-container {
     width: 900px;
@@ -295,11 +315,15 @@ h1 {
       flex-direction: column;
 
       input {
+        font-family: Montserrat;
+        font-size: 16px;
         height: 45px;
         margin: 0 30px;
         border-radius: 30px;
+        border: none;
         padding-left: 30px;
-        background: #d3d3d3;
+        // background: #d3d3d3;
+        background: linear-gradient(to bottom, #cecece, 5%, #e5e5e5);
       }
 
       .contact-btn {
@@ -307,6 +331,33 @@ h1 {
         margin: 50px auto;
         width: 250px;
       }
+    }
+  }
+}
+
+#main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  background: #444;
+  color: #aaaaaa;
+  padding: 10px 30px;
+
+  .privacy {
+    color: #e5e5e5;
+  }
+
+  .go-top {
+    background: #000;
+    font-size: 17px;
+    padding: 10px;
+    color: #aaaaaa;
+    border-radius: 50%;
+
+    :hover {
+      background-color: $primary-color;
     }
   }
 }
