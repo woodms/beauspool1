@@ -165,13 +165,12 @@
       <div class="contact-container py-2">
         <h1>schedule a free consultation</h1>
         <h2>we use text messaging to schedule appointment times</h2>
-        <form class="contact-form">
-          <input id="first-name" type="text" placeholder="First Name *">
+        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+          <input id="first-name" type="text" placeholder="First Name *" name="name">
           <br>
-          <input type="tel" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
-          <button class="btn-light contact-btn">GET STARTED <i class="far fa-smile-beam"></i></button>
+          <input type="tel" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone">
+          <button type="submit" class="btn-dark contact-btn">GET STARTED <i class="far fa-smile-beam"></i></button>
         </form>
-        
       </div>
     </section>
   
