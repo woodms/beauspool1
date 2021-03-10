@@ -333,3 +333,22 @@ header {
     border-radius: 50%; }
     #main-footer .go-top :hover {
       background-color: #189ad3; }
+
+@media (max-width: 1250px) {
+  .showcase-content {
+    font-size: 12px;
+    padding-top: 450px;
+    padding-left: 150px; } }
+
+@media (max-width: 600px) {
+  .showcase-content {
+    padding-top: 400px; }
+  .instruction {
+    grid-template-columns: 1fr; }
+    .instruction iframe {
+      height: 400px; }
+  #home-c .happy-container .happy-content img {
+    height: 150px;
+    width: 150px; }
+  #home-c .happy-container .happy-content h2 {
+    font-size: 2em; } }

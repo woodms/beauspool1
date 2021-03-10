@@ -1,0 +1,38 @@
+// Tablets
+@media (max-width: 1250px) {
+  .showcase-content {
+    font-size: 12px;
+    padding-top: 450px;
+    padding-left: 150px;
+  }
+}
+
+// Smartphones
+@media (max-width: 600px) {
+  .showcase-content {
+    padding-top: 400px;
+  }
+
+  .instruction {
+    grid-template-columns: 1fr;
+
+    iframe {
+      height: 400px;
+    }
+  }
+
+  #home-c {
+    .happy-container {
+      .happy-content {
+        img {
+          height: 150px;
+          width: 150px;
+        }
+
+        h2 {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
