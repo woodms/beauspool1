@@ -22,6 +22,7 @@
   }
 
   #home-c {
+    height: 700px;
     .happy-container {
       .happy-content {
         img {
@@ -33,6 +34,50 @@
           font-size: 2em;
         }
       }
+    }
+  }
+
+  #home-d {
+    .review-videos {
+      grid-template-columns: 1fr;
+
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  #home-e {
+    height: 2200px;
+    .how iframe {
+      width: 95%;
+    }
+
+    .steps {
+      grid-template-columns: 1fr;
+      row-gap: 25px;
+      margin-left: 25px;
+      z-index: 0;
+    }
+  }
+
+  #home-f {
+    .contact-container {
+      width: 400px;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  #main-footer {
+    #go-top {
+      display: none;
     }
   }
 }
